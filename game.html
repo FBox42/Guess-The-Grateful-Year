@@ -1,0 +1,77 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the year: Grateful Dead</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!-- create CSS grid styled div container to display twin city info -->
+
+    <div class="header">
+        <a href="index.html" class="title">Guess the year: Grateful Dead</a>
+        <div class="header-right">
+            <a class="active" href="#home">Home</a>
+        </div>
+    </div>
+
+
+    <div class="main-body" id="main-content">
+        <h2 id="roundHeader">Round 1/5</h2>
+
+        <div class="embed">
+            <h2 id="loadingMessage">Loading Track...</h2>
+            <iframe id="random-iframe" width="1000" height="1000" frameborder="0" webkitallowfullscreen="true"
+                mozallowfullscreen="true" allowfullscreen></iframe>
+        </div>
+
+        <div class="slider-container">
+            <input type="range" id="yearSlider" min="1965" max="1995" step="1" value="1980">
+            <ul class="slider-labels">
+                <li>1965</li>
+                <li>1970</li>
+                <li>1975</li>
+                <li>1980</li>
+                <li>1985</li>
+                <li>1990</li>
+                <li>1995</li>
+            </ul>
+            <p id="selectedYear">1980</p>
+        </div>
+
+        <button class="button" id="confirmButton">Confirm</button>
+
+    </div>
+
+    <div class="results" id="resultsDiv">
+        <br>
+        <h3 id="userGuess"></h3>
+        <h3 id="userScore"></h3>
+        <h3 id="showDisplay"></h3>
+        <h3 id="trackDisplay"></h3>
+        <br><br>
+        <button class="button" id="nextRoundButton">Next Round</button>
+    </div>
+
+    <div class="finalResults" id="finalResultPage">
+        <div class="final-score">
+            <span class="label">Final Score:</span>
+            <br>
+            <span class="score" id="finalScoreValue"></span>
+        </div>
+        <div id="tableContainer"></div>
+        <div id="finalButtonContainer">
+            <button class="button" id="newGameButton">New Game</button>
+            <button class="button" id="homeButton">Home Page</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

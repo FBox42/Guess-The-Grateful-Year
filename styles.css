@@ -1,0 +1,303 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Storybook';
+    src: url('Storybook.woff2') format('woff2'),
+        url('Storybook.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    display: inline-table;
+    font-weight: bold;
+}
+
+#trackColumn {
+    text-align: left;
+}
+
+#loadingMessage{
+    margin-bottom: 80px;
+}
+
+
+#newGameButton{
+margin: inherit;
+margin-right: 50px;
+margin-left: 50px;
+height: 70px;
+
+}
+
+#homeButton{
+    margin: inherit;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 70px;
+    }
+
+#finalButtonContainer {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#nextRoundButton{
+    margin-bottom: 20px;
+}
+
+
+.final-score {
+    font-size: xxx-large;
+    /* Adjust font size as needed */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Storybook';
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:last-child {
+    border-top: 3px solid black;
+    border-bottom: hidden;
+    font-weight: bold;
+}
+
+tr:first-child {
+    border-bottom: 3px solid black;
+}
+
+/* Style for the slider container */
+.slider-container {
+    text-align: center;
+    margin-top: 5px;
+    position: relative; /* Add this property */
+  }
+  
+  /* Style for the labels list */
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-inline-start: 0px;
+    width: 92.2%;
+    text-align: center;
+    margin-inline-start: 3.9%;
+    font-weight: bolder;
+    font-size: larger;
+    position: absolute;
+    top: 12%;
+  }
+  
+  /* Style for each label item */
+  .slider-labels li {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  /* Style for the tick lines */
+  .slider-labels li::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 12px;
+    background-color: black;
+    z-index: -1;
+  }
+
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#yearSlider {
+    -webkit-appearance: none;
+    width: 80%;
+    margin: 0 auto;    
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: .2s;
+  }
+
+  
+  #yearSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #22378a;
+    cursor: pointer;
+  }
+  
+  #yearSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #22378a;
+    cursor: pointer;
+  }
+
+  #yearSlider:disabled::-webkit-slider-thumb {
+    background: grey; /* Change the knob color to grey when slider is disabled */
+  }
+  
+  #yearSlider:disabled::-moz-range-thumb {
+    background: grey; /* Change the knob color to grey when slider is disabled */
+  }
+
+
+
+#selectedYear {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+iframe#random-iframe {
+    height: 100px;
+}
+
+.results {
+    display: none;
+    margin-top: 15px;
+}
+
+#showDisplay a {
+    color: black;
+    /* Change link color to blue */
+    text-decoration: underline;
+    font-size: larger;
+    /* Underline the link */
+}
+
+#trackDisplay {
+    color: black;
+    /* Change link color to blue */
+    font-size: 23px;
+    /* Underline the link */
+}
+
+#userGuess {
+    font-size: x-large;
+    margin-top: 4px;
+
+}
+
+#showDisplay{
+    margin-top: 42px;
+
+}
+
+.button {
+    background-color: #22378a;
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    font-family: Georgia, serif;
+    font-weight: bolder;
+  }
+  
+  
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .button:disabled {
+    background-color: #dddddd;
+    color: #999999;
+    cursor: not-allowed;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.24),0 0px 0px 0 rgba(0,0,0,0.19);
+  }
+
+
+#roundHeader {
+    margin-bottom: 60px;
+}
+
+#userScore {
+
+    font-size: xx-large;
+    font-weight: 300;
+    font-family: "Storybook";
+}
+
+.finalResults {
+    display: none;
+}
+
+.header {
+    overflow: hidden;
+    background-color: black;
+    padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 8px;
+    line-height: 12px;
+    border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.title {
+    font-size: 30px;
+    font-family: 'Storybook', sans-serif;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    text-decoration: underline;
+}
+
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+
+
+.playButton {
+    padding: 10px 20px;
+    /* Adjust padding for desired size */
+    height: 300px;
+    width: 400px;
+    font-size: 16px;
+    /* Adjust font size for desired size */
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Storybook', sans-serif;
+
+}
